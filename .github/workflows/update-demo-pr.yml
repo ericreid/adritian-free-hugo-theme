@@ -75,7 +75,7 @@ jobs:
           # create a pull-requests containing the updates.
           gh auth login --with-token < token.txt
           gh pr create \
-            --body "" \
-            --title "chore: update theme to $LATEST_TAG" \
+            --body "Updating theme from " \
+            --title "chore: update theme from https://github.com/zetxek/adritian-free-hugo-theme/commit/$LATEST_TAG" \
             --head "$BRANCH_NAME" \
             --base "main"
